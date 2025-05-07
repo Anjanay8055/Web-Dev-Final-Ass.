@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - The Golden Crust</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="/api/placeholder/150/150" alt="The Golden Crust Logo" class="logo">
+        </div>
+        <nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">Our Story</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="page-banner">
+        <div class="banner-content">
+            <h1>Our Gallery</h1>
+            <p>A visual feast of our delectable creations</p>
+        </div>
+    </section>
+
+    <section class="gallery-filter">
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">All Photos</button>
+            <button class="filter-btn" data-filter="bakery">Our Bakery</button>
+            <button class="filter-btn" data-filter="breads">Breads</button>
+            <button class="filter-btn" data-filter="pastries">Pastries</button>
+            <button class="filter-btn" data-filter="cakes">Cakes</button>
+            <button class="filter-btn" data-filter="events">Events</button>
+        </div>
+    </section>
+
+    <section class="gallery-container">
+        <div class="gallery-grid">
+            <!-- Bakery Images -->
+            <div class="gallery-item" data-category="bakery">
+                <img src="/api/placeholder/400/300" alt="Bakery Exterior">
+                <div class="gallery-overlay">
+                    <div class="overlay-content">
+                        <h3>Our Lucknow Branch</h3>
+                        <p>The exterior of our third branch, opened in 2010</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="bakery">
+                <img src="/api/placeholder/400/300" alt="Bakery Interior">
+                <div class="gallery-overlay">
+                    <div class="overlay-content">
+                        <h3>Inside Our Bakery</h3>
+                        <p>The warm and inviting atmosphere of our main location</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="bakery">
+                <img src="/api/placeholder/400/300" alt="Baking Process">
+                <div class="gallery-overlay">
+                    <div class="overlay-content">
+                        <h3>Behind the Scenes</h3>
+                        <p>Our master bakers at work in the early morning</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Breads Images -->
+            <div class="gallery-item" data-category="breads">
+                <img src="/api/placeholder/400/300" alt="Artisan Bread Selection">
+                <div class="gallery-overlay">
+                    <div class="overlay-content">
+                        <h3>Daily Bread Selection</h3>
+                        <p>Fresh from our ovens every morning</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="breads">
+                <img src="/api/placeholder/400/300" alt="Sourdough Loaves">
+                <div class="gallery-overlay">
+                    <div class="overlay-content">
+                        <h3>Signature Sourdough</h3>
+                        <p>Made with our special starter, cultivated for over a decade</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="breads">
+                <img src="/api/placeholder/400/300" alt="Breakfast Breads">
+                <div class="gallery-overlay">
+                    <div class="overlay-content">
+                        <h3>Breakfast Selection</h3>
+                        <p>Perfect pairings for your morning coffee</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pastries Images -->
+            <div class="gallery-item" data-category="pastries">
+                <img src="/api/placeholder/400/300" alt="Croissant Selection">
+                <div class="gallery-overlay">
+                    <div class="overlay-content">
+                        <h3>Butter Croissants</h3>
+                        <p>Flaky layers of buttery goodness</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="pastries">
+                <img src="/api/placeholder/400/300" alt="Fruit Tarts">
+                <div class="gallery-overlay">
+                    <div class="overlay-content">
+                        <h3>Seasonal Fruit Tarts</h3>
+                        <p>Fresh fruits on a delicate pastry base</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="pastries">
+                <img src="/api/placeholder/400/300" alt="Danish Pastries">
+                <div class="gallery-overlay">
+                    <div class="overlay-content">
+                        <h3>Danish Pastry Assortment</h3>
+                        <p>Traditional recipes with modern twists</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cakes Images -->
+            <div class="gallery-item" data-category="cakes">
+                <img src="/api/placeholder/400/300" alt="Signature Cheesecake">
+                <div class="gallery-overlay">
+                    <div class="overlay-content">
+                        <h3>Our Famous Cheesecake</h3>
+                        <p>A favorite among younger generations</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="cakes">
+                <img src="/api/placeholder/400/300" alt="Wedding Cake">
+                <div class="gallery-overlay">
+                    <div class="overlay-content">
+                        <h3>Wedding Creation</h3>
+                        <p>A three-tier masterpiece for a special day</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="cakes">
+                <img src="/api/placeholder/400/300" alt="Birthday Cakes">
+                <div class="gallery-overlay">
+                    <div class="overlay-content">
+                        <h3>Birthday Celebrations</h3>
+                        <p>Custom-designed cakes for all ages</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Events Images -->
+            <div class="gallery-item" data-category="events">
+                <img src="/api/placeholder/400/300" alt="Baking Workshop">
+                <div class="gallery-overlay">
+                    <div class="overlay-content">
+                        <h3>Baking Workshop</h3>
+                        <p>Mr. Ashok sharing bread-making techniques</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="events">
+                <img src="/api/placeholder/400/300" alt="Corporate Catering">
+                <div class="gallery-overlay">
+                    <div class="overlay-content">
+                        <h3>Corporate Catering</h3>
+                        <p>Serving a tech conference in Lucknow</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="events">
+                <img src="/api/placeholder/400/300" alt="Community Event">
+                <div class="gallery-overlay">
+                    <div class="overlay-content">
+                        <h3>Community Celebration</h3>
+                        <p>Supporting local festivities with our creations</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="instagram-feed">
+        <div class="section-header">
+            <h2>Follow Us on Instagram</h2>
+            <p>Share your Golden Crust moments with #GoldenCrustBakery</p>
+        </div>
+        <div class="instagram-grid">
+            <!-- Instagram Feed Mockup -->
+            <div class="insta-post">
+                <img src="/api/placeholder/300/300" alt="Instagram Post 1">
+            </div>
+            <div class="insta-post">
+                <img src="/api/placeholder/300/300" alt="Instagram Post 2">
+            </div>
+            <div class="insta-post">
+                <img src="/api/placeholder/300/300" alt="Instagram Post 3">
+            </div>
+            <div class="insta-post">
+                <img src="/api/placeholder/300/300" alt="Instagram Post 4">
+            </div>
+            <div class="insta-post">
+                <img src="/api/placeholder/300/300" alt="Instagram Post 5">
+            </div>
+            <div class="insta-post">
+                <img src="/api/placeholder/300/300" alt="Instagram Post 6">
+            </div>
+        </div>
+        <div class="instagram-link">
+            <a href="#" class="btn btn-secondary">Visit Our Instagram</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="/images/logo.jpeg" alt="The Golden Crust Logo">
+                <!-- <p>Baked with Love & Care</p> -->
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">Our Story</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Jeevan Palaza, Vipul Khand, Gomti Nagar, Lucknow, UP, India</p>
+                <p><i class="fas fa-phone"></i> +91 993*******</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 The Golden Crust Bakery. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
